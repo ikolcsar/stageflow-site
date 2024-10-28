@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Construction</title>
     <style>
+        body {
+            margin: 0; /* Elimină marginea implicită */
+            padding: 0; /* Elimină padding-ul implicit */
+            overflow: hidden; /* Opțional: Ascunde barele de defilare */
+        }
+
         .desktop-image {
             display: block;
         }
@@ -25,10 +31,9 @@
 
         img {
             display: block;
-            max-width: 100vw; /* Lățimea maximă a imaginii este 100% din lățimea ecranului */
-            max-height: 100vh; /* Înălțimea maximă a imaginii este 100% din înălțimea ecranului */
-            object-fit: cover; /* Umple întreaga zonă, menținând raportul de aspect */
-            margin: 0 auto; /* Centering */
+            width: 100%; /* Folosește 100% din lățimea containerului */
+            height: auto; /* Menține proporția imaginii */
+            object-fit: cover; /* Umple întreaga zonă */
         }
     </style>
 </head>
