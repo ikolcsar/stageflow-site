@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Construction</title>
     <style>
-        body {
+        html, body {
+            height: 100%; /* Asigură că html și body ocupă 100% din înălțime */
             margin: 0; /* Elimină marginea implicită */
             padding: 0; /* Elimină padding-ul implicit */
             overflow: hidden; /* Opțional: Ascunde barele de defilare */
@@ -31,9 +32,9 @@
 
         img {
             display: block;
-            width: 100%; /* Folosește 100% din lățimea containerului */
-            height: auto; /* Menține proporția imaginii */
-            object-fit: cover; /* Umple întreaga zonă */
+            width: 100vw; /* Lățimea imaginii este 100% din lățimea vizibilă a ferestrei */
+            height: 100vh; /* Înălțimea imaginii este 100% din înălțimea vizibilă a ferestrei */
+            object-fit: cover; /* Umple întreaga zonă, menținând raportul de aspect */
         }
     </style>
 </head>
